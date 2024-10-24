@@ -11,9 +11,9 @@ import { Container } from 'react-bootstrap';
 
 const App = () => {
     return (
-        <Container>
+        <Container fluid style={{ backgroundColor: 'gray',  margin: '0', padding: '0 5vw' }}>
         <Router>
-            <Navbar />
+            <Navbar/>
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/country/:name' element={<SingleCountry />} />
