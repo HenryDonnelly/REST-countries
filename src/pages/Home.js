@@ -43,8 +43,8 @@ const Home = () => {
     });
 
     return (
-        <div>
-            <input placeholder='Search' onChange={handleChange}></input>
+        <div style={{ paddingBottom: '100vw' }}>
+            <input placeholder='Search' onChange={handleChange} style={{ marginBottom: '10px' }}></input>
             <Row md={3} xs={1}>
                 {countryCards}
             </Row>
